@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: po;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #1E1E1E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.music-player{
+    background-image: url(medias/background-gradient.png);
+    width: 430px;
+    height: 900px;
+    padding: 25px 35px;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.status-bar{
+    margin-top: -20px;
+    margin-left: -35px;
+    margin-bottom: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+nav .circle{
+    border-radius: 50%;
+    width: 62px;
+    height: 62px;
+    line-height: 62px;
+    background: #13151A;
+    color: #a0a0a0;
+    box-shadow: 0 5px 10px rgba(22, 22, 22, 0.61);
+    cursor: pointer;
+}
+
+.song-img{
+    width: 280px;
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 2px solid rgb(53, 53, 53);
+    box-shadow: 0px 10px 60px rgba(20, 20, 20, 0.61);
+}
+
+.music-player h1{
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+.music-player p{
+    font-size: 15px;
+    color: rgb(109, 109, 109);
+}
+
+#progress{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #1B1B1D;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 40px 0;
+}
+
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: #a0a0a0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 10px solid #1B1B1D;
+    box-shadow: 0 5px 5px rgba(20, 20, 20, 0.61);
+}
+#ctrlIcon{
+    width: 25px;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls div{
+    width: 80px;
+    height: 80px;
+    margin: 40px 20px;
+    background: #13151A;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #a0a0a0;
+    box-shadow: 0 10px 20px rgba(20, 20, 20, 0.61);
+    cursor: pointer;
+}
+
+.controls div:nth-child(2){
+    transform: scale(1.5);
+    background: #13151A;
+    color: #a0a0a0;
+}
+
+.home-indicator{
+    margin-top: 30px;
+    margin-left: -20px;
+}

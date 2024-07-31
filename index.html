@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/090a479d3a.js" crossorigin="anonymous"></script>
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <div class="status-bar">
+                <img src="medias/status-bar -iphone.svg" alt="">
+            </div>
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="medias/image-music-app.svg" class="song-img">
+            <h1>Car Keys (Ayla)</h1>
+            <p>Alok feat. Ava Max</p>
+
+            <audio id="song">
+                <source src="medias/Alok  Ava Max - Car Keys (Ayla).mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div><img src="medias/skip_back.svg" alt=""></div>
+                <div onclick="playPause()"><img src="medias/play-pause.svg" id="ctrlIcon"></div>
+                <div><img src="medias/skip_next.svg" alt=""></div>
+            </div>
+            <div class="home-indicator">
+                <img src="medias/home-indicator.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
